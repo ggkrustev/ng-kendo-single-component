@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.4.
 
+The following steps were taken to build Angular app using **single Kendo UI Component**.
+
+1. Create project using [ng new]()
+2. Installed Kendo DateInputs for Angular following [this tutorial](http://www.telerik.com/kendo-angular-ui/components/dateinputs/).
+3. Add styles only for the DateInputs, based on the help from the [Getting Started section](http://www.telerik.com/kendo-angular-ui/getting-started/#toc-adding-the-styles).
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
