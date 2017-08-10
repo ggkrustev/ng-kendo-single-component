@@ -1,3 +1,25 @@
 <h1>
   {{title}}
 </h1>
+
+<form [formGroup]="myForm">
+    <div class="example-config">
+        <p>The form is valid: <strong>{{myForm.controls.birthDate.valid}}</strong></p>
+        <p>The form.birthDate value is: <strong>{{myForm.controls.birthDate.value }}</strong></p>
+        <p *ngIf="!myForm.valid">
+        Only values between 1/1/1917 and 12/31/2000 are valid!
+        </p>
+        <p>
+        Errors: {{ myForm.controls.birthDate.errors | json }}
+        </p>
+    </div>
+
+    <label>
+        Select Birthdate:
+        <kendo-datepicker
+         formControlName="birthDate"
+         [min]="min"
+         [max]="max"
+         ></kendo-datepicker>
+    </label>
+</form>
